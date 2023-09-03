@@ -89,7 +89,55 @@ namespace _3_EstudosCSharoPOO
 
 
             //// ======================
-            
+            //Car car1 = new Car("Mustang", "GTX");
+
+            //Car car2 = Car.Copy(car1);
+
+            //Car.Change(car1, "GTR");
+
+            //Console.WriteLine(car1.name + " " + car1.model);
+            //Console.WriteLine(car2.name + " " + car2.model);
+
+
+            //// ======================
+            //// Aqui estamos usando metodos virtual e overriding para poder criar diferentes 
+            //// heranças para cada objeto.
+            //Dog dog = new Dog();
+            //Cat car = new Cat();
+
+            //dog.Sound();
+            //car.Sound();
+
+
+            //// ======================
+            //Car car1 = new Car("Lambo", "TURB");
+
+            //Console.WriteLine(car1.ToString());
+            //Console.WriteLine(car1);
+
+
+            //// ======================
+            //// Exemplo de polymorphism.
+            //// Precisamos usar virtual e override para usar polymorphism.
+            //Bycycle bycycle = new Bycycle();
+            //Boat boat = new Boat();
+
+            //Vehicle[] vehicles = { bycycle, boat };
+
+            //foreach (var vehicle in vehicles)
+            //{
+            //    vehicle.Go();
+            //}
+
+
+            //// ======================
+            //// Aqui usamos Interfaces para declarar um contrato na classe dog e cat.
+            //Dog dog = new Dog();
+            //Cat cat = new Cat();
+
+            //dog.Hunt();
+            //cat.Flee();
+            //cat.Hunt();
         }
     }
 }

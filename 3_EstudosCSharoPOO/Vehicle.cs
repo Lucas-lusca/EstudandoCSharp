@@ -10,7 +10,7 @@ namespace _3_EstudosCSharoPOO
     {
         public int speed = 0;
 
-        public void Go()
+        public virtual void Go()
         {
             Console.WriteLine("Este vehicle esta andando.");
         }
@@ -19,10 +19,20 @@ namespace _3_EstudosCSharoPOO
     public class Bycycle : Vehicle 
     {
         public int wheels = 2;
+
+        public override void Go()
+        {
+            Console.WriteLine("Este Bycycle esta andando.");
+        }
     }
 
     public class Boat : Vehicle
     {
         public int sails = 1;
+
+        public override void Go()
+        {
+            Console.WriteLine("Este Boat esta andando.");
+        }
     }
 }

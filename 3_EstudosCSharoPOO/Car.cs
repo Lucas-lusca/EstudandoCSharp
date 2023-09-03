@@ -9,7 +9,7 @@ namespace _3_EstudosCSharoPOO
     public class Car
     {
         public String name;
-        String model;
+        public String model;
         int year;
         String color;
 
@@ -25,6 +25,11 @@ namespace _3_EstudosCSharoPOO
             cars++;
         }
 
+        public override String ToString()
+        {
+            return "Este é o carro: " + name + ". Modelo: " + model;
+        }
+
         public void Info()
         {
             Console.WriteLine("Nome: " + name + ". " + 
@@ -35,6 +40,16 @@ namespace _3_EstudosCSharoPOO
         public void Drive()
         {
             Console.WriteLine("Você esta dirigindo o carro: " + name + ". " + "De cor: " + color);
+        }
+
+        public static void Change(Car car, String model)
+        {
+            car.model = model;
+        }
+
+        public static Car Copy(Car car)
+        {
+            return new Car(car.name, car.model);
         }
     }
 }
